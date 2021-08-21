@@ -35,16 +35,16 @@ body:
         - Microsoft Edge
         - Opera
   - type: textarea
-    id: attatchments
-    attributes:
-      label: Attatchments
-      description: Please attatch images and videos/GIFs to paint a better picture of the bug.
-  - type: textarea
     id: logs
     attributes:
       label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
+  - type: textarea
+    id: attatchments
+    attributes:
+      label: Attatchments
+      description: Please attatch images and videos/GIFs to paint a better picture of the bug.
   - type: checkboxes
     id: terms
     attributes:
