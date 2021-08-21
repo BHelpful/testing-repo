@@ -46,18 +46,21 @@ body:
         - [ ] Definition of ready
         <details>
         <summary>DOR</summary>
-
+        
+        ```
         - Acceptance criteria written and reviewed by QA, PM and SE
         - Behaviour scenarios written
         - Signed off UX design
         - Estimated and appropriately scoped
-
+        ```
+        
         </details>
 
         - [ ] Definition of done
         <details>
-        <summary>DOR</summary>
-
+        <summary>DOD</summary>
+        
+        ```
         - Test complete
             - Merged to master
             - Unit tests on all new code (80% coverage)
@@ -75,7 +78,8 @@ body:
         - Documentation of tech debt
         - Persistent technical documentation updated / written
             - Ready is updated / written
-
+        ```
+        
         </details>
   - type: checkboxes
     id: terms
