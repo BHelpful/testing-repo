@@ -37,8 +37,11 @@ body:
       label: Comments / questions
       description: Any comments or questions relating the story.
       placeholder: Should we devide this into sub-tasks?
-  - type: markdown
+  - type: textarea
+    id: DOR/DOD
     attributes:
+      label: Definition of ready/done
+      description: This field is not to be changed!
       value: |
         - [ ] Definition of ready
         <details>
