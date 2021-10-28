@@ -1,7 +1,7 @@
 name: Add PR to project
 on:
   pull_request:
-    types: [opened, reopened]
+    types: [opened]
 
 jobs:
   add_item_to_project:
