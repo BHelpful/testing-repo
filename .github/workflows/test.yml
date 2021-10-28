@@ -20,7 +20,7 @@ jobs:
               organization(login: $org){
                 projectNext(number: $number) {
                   id
-                  fields(first:10) {
+                  fields(first:20) {
                     nodes {
                       id
                       name
@@ -40,8 +40,8 @@ jobs:
           ISSUE_ID: ${{ github.event.issue.node_id }}
         run: |
           item_id="$( gh api graphql --header 'GraphQL-Features: projects_next_graphql' -f query='
-            mutation($project:ID!, $pr:ID!) {
-              addProjectNextItem(input: {projectId: $project, contentId: $pr}) {
+            mutation($project:ID!, $issue:ID!) {
+              addProjectNextItem(input: {projectId: $project, contentId: $issue}) {
                 projectNextItem {
                   id
                 }
